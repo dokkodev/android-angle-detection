@@ -50,6 +50,26 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
     protected boolean mEnabled;
     protected FpsMeter mFpsMeter = null;
 
+    // Added by Jae-Seo
+    protected float mHorizontalViewAngle;
+    protected float mVerticalViewAngle;
+
+    public float getmHorizontalViewAngle() {
+        return mHorizontalViewAngle;
+    }
+
+    public float getmVerticalViewAngle() {
+        return mVerticalViewAngle;
+    }
+
+    public int getmFrameWidth() {
+        return mFrameWidth;
+    }
+
+    public int getmFrameHeight() {
+        return mFrameHeight;
+    }
+
     public static final int CAMERA_ID_ANY   = -1;
     public static final int CAMERA_ID_BACK  = 99;
     public static final int CAMERA_ID_FRONT = 98;
@@ -410,6 +430,12 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
             Canvas canvas = getHolder().lockCanvas();
             if (canvas != null) {
                 canvas.drawColor(0, android.graphics.PorterDuff.Mode.CLEAR);
+
+
+
+
+
+
                 if (BuildConfig.DEBUG)
                     //Log.d(TAG, "mStretch value: " + mScale);
 

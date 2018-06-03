@@ -6,7 +6,7 @@ package com.cs442.afinal.utils;
 
 public class MatrixMultiplication {
 
-    public static void multiply(double[][] a, double[][] b) {
+    public static double[][] multiply(double[][] a, double[][] b) {
         int rowsInA = a.length;
         int columnsInA = a[0].length;
         int columnsInB = b[0].length;
@@ -18,12 +18,14 @@ public class MatrixMultiplication {
                 }
             }
         }
-        System.out.println("Product of A and B is");
+        //System.out.println("Product of A and B is");
         for (int i = 0; i < c.length; i++) {
             for (int j = 0; j < c[0].length; j++) {
-                System.out.print(c[i][j] + " ");
+                //System.out.print(c[i][j] + " ");
             }
             System.out.println();
         }
+
+        return c;
     }
 }

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cs442.afinal">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -18,10 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CameraActivity"
-            android:screenOrientation="landscape">
-
-        </activity>
+        <activity
+            android:name=".activity.AngleCameraActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.BasicCameraActivity"></activity>
     </application>
 
 </manifest>

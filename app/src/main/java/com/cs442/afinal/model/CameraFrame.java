@@ -7,17 +7,17 @@ import org.opencv.core.MatOfKeyPoint;
  * Created by stymjs0515 on 26/05/2018.
  */
 
-public class ReferenceImage {
+public class CameraFrame {
 
     private Mat gray;
     private Mat rgba;
     private Mat descriptors;
     private MatOfKeyPoint keyPoints;
 
-    public ReferenceImage() {
+    public CameraFrame() {
     }
 
-    public ReferenceImage(Mat gray, Mat rgba, Mat descriptors, MatOfKeyPoint keyPoints) {
+    public CameraFrame(Mat gray, Mat rgba, Mat descriptors, MatOfKeyPoint keyPoints) {
         this.gray = gray;
         this.rgba = rgba;
         this.descriptors = descriptors;
